@@ -1,0 +1,40 @@
+			   Sudoku Challenge
+			  ==================
+
+A level is considered as solved if your solver can count the number of
+solution found ('--all' option) for all the grids in less than 5 mn.
+For example, a typical run could be :
+
+#> time (../sudoku --all level-03/*.sku > /dev/null)
+
+real    0m6.720s
+user    0m6.716s
+sys     0m0.004s
+
+You can also run a full contest by copying sudoku solvers in binaries/
+and running the RunContest.sh script.
+
+
+Leve1 1 and Level 2
+-------------------
+Grids can be solved with various "simple" heuristics.
+
+Level 3
+-------
+Grids can be solved with all the previous heuristics plus, at most,
+one choice (no full backtracking).
+
+Level 4
+--------
+Grid can be solved only with backtracking, heuristics won't be enough.
+
+Level 5
+-------
+Solving these grids requires to look at various algorithmic and
+performance issues in order to get through.
+
+Level 99
+--------
+Partially unexplored...
+Solving one of these grids is already an achievement in itself.
+
